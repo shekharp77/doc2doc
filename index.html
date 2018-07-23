@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="fevicon.png"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+</script>
+<style>.panel li{-webkit-transition:background 0.2s ease,color 0.2s ease;transition:background 0.2s ease,color 0.2s ease}.loaded .panel li a{-webkit-transition:color 0.2s ease;transition:color 0.2s ease}.panel{font-family:'Source Sans Pro';font-size:1.3em;position:absolute;z-index:10;background:#eee;top:10%;margin-left:25%;margin-right:25%;padding:20px;border-radius:4px;z-index:100}.panel.hide{display:none}.panel h1{font-size:1.8em;font-weight:700;text-align:center;color:#222;margin-top:-4px}.panel .r-version{display:block;margin-bottom:7px;text-align:center;font-size:.75em}.panel h2{font-weight:400;font-size:.8em;margin-bottom:16px;text-align:center;line-height:1.3em}.panel li{font-size:1.1em;font-weight:400;text-align:center;height:34px;line-height:34px;background:#fff;margin-top:10px;color:#222;border-radius:4px}.panel li a{display:block;width:100%;height:100%;color:#222}.panel li a:visited{color:#222}.panel li a span:after{font-family:'icomoon';margin-left:10px;vertical-align:top}.panel li .label,.panel li .svg-wrap{display:inline-block;vertical-align:top}.panel li .svg-wrap{width:18px;height:34px;margin-left:6px}.panel li .svg-wrap svg{fill:#222;width:100%;height:100%;-webkit-transition:fill 0.2s ease;transition:fill 0.2s ease}.panel li:hover{background:#222;color:#fff}.panel li:hover a{color:#fff}.panel li:hover svg{fill:#fff}.dg li.save-row select{margin-top:4px}.dg .c select{margin-top:4px !important}.dg .c input[type=checkbox]{margin-top:7.5px !important}.dg li.save-row{background:#eee !important}.dg.ac{position:absolute !important;margin-top:39px !important;font:1em 'Source Sans Pro', 'Lucida Grande', sans-serif !important;z-index:150 !important}.dg .cr.function{border-left:3px solid #eee !important;text-shadow:none !important;-webkit-transition:text-indent 0.2s ease,background 0.2s ease;transition:text-indent 0.2s ease,background 0.2s ease}.dg .cr.function .property-name{width:100% !important}.dg .cr.function:hover{background:#509449 !important;text-indent:10px}.dg .close-button{border-radius:0 0 3px 3px;padding:4px 0;background:#111 !important}.dg.main{margin-right:5px !important}.dg li:not(.folder){background-color:#222 !important}.dg li.title{background-color:#111 !important}@media (max-width: 800px){.dg.ac{display:none !important}}.count-particles{background:#000022;position:absolute;top:48px;left:0;width:80px;color:#13E8E9;font-size:.8em;text-align:left;text-indent:4px;line-height:14px;padding-bottom:2px;font-family:Helvetica, Arial, sans-serif;font-weight:bold}.js-count-particles{font-size:1.1em}#stats,.count-particles{-moz-user-select:-moz-none;-ms-user-select:none;-webkit-user-select:none;user-select:none;margin-top:5px;margin-left:5px}#stats{border-radius:3px 3px 0 0;overflow:hidden}.count-particles{border-radius:0 0 3px 3px}.box-top{font-family:'Source Sans Pro';font-size:1.1em;-moz-user-select:-moz-none;-ms-user-select:none;-webkit-user-select:none;user-select:none;position:absolute;top:0;right:0;margin-top:5px;margin-right:5px;background:rgba(238,238,238,0.5);width:340px;height:34px;border-radius:3px 3px 0 0;z-index:175}.box-top .select-label{cursor:pointer;display:block;height:28px;line-height:28px;text-indent:8px;margin-top:3px;color:#fff;border-radius:2px;background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==);background-repeat:no-repeat}.box-top .select-dropdown{display:none;background:#eee;padding:4px 0;border-radius:0 0 2px 2px}.box-top .select-dropdown li{cursor:pointer;line-height:24px;height:24px;padding:0 8px;color:#111}.box-top .select-dropdown li:hover{background:#ddd}.box-top .select-dropdown li a{color:#111}.box-top .select-label,.box-top .select-dropdown{margin-left:3px}.box-top .box-presets{width:40%}.box-top .box-presets .select-label{background-color:#111;background-position:96% 11px}.box-top .box-share{position:absolute;top:0;right:0;margin-right:3px;width:76px}.box-top .box-share .select-label{background-color:#111;background-position:92% 11px}@media (max-width: 800px){.box-top{background:none !important;margin-top:2px !important;width:140px !important}.box-presets{width:100% !important}.box-share{display:none}.box-codepen{display:none}}.box-codepen{position:absolute;top:3px;right:79px;z-index:50;outline:0;color:#fff;cursor:pointer;height:28px;line-height:28px;border-radius:2px;background:#111;padding:0 8px}.box-codepen .codepen-label,.box-codepen .codepen-button{display:inline-block;vertical-align:top}.box-codepen form,.box-codepen input{outline:0}.box-codepen .codepen-button{margin-left:4px}.box-codepen .codepen-button .svg-wrap{width:24px;height:28px;display:block}.box-codepen .codepen-button .svg-wrap svg{width:100%;height:100%;fill:#fff}.box-codepen .codepen-submit-bt{cursor:pointer;position:absolute;z-index:1;top:0;left:0;width:100%;height:100%;border:0;opacity:0}.box-bottom{font-family:'Source Sans Pro';position:absolute;bottom:0;right:0;margin-bottom:5px;margin-right:5px}.box-bottom .box-github{padding-left:6px;background-color:#eee;border-radius:3px;cursor:pointer}.box-bottom .box-github .label,.box-bottom .box-github .svg-wrap{display:inline-block;vertical-align:middle}.box-bottom .box-github a{color:#222}.box-bottom .box-github .label{font-size:1.2em;font-weight:400;text-align:center;color:#222}.box-bottom .box-github .svg-wrap{width:28px;height:28px;padding:5px;box-sizing:border-box}.box-bottom .box-github .svg-wrap svg{width:100%;height:100%;fill:#222}html,body{width:100%;height:100%;background:#fff}canvas{display:block;vertical-align:bottom}#particles-js{width:100%;height:100%;background-color:#0fad7e;background-size:cover;background-position:50% 50%}#particles-js.troll canvas{-webkit-animation:spinning 1.4s infinite;animation:spinning 1.4s infinite}#particles-js .particles-js-canvas-el{-ms-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);opacity:1;-webkit-animation:appear 1.4s 1;animation:appear 1.4s 1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}#loader{position:absolute;top:0;left:0;z-index:200;background:#111;width:100%;height:100%}@-webkit-keyframes appear{from{-ms-transform:scale(0);-webkit-transform:scale(0);transform:scale(0);opacity:0}to{-ms-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes appear{from{-ms-transform:scale(0);-webkit-transform:scale(0);transform:scale(0);opacity:0}to{-ms-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes spinning{from{-ms-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spinning{from{-ms-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+    </style>
+<style type="text/css">
+  .fo {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   background-color: black;
+   text-align: center;
+}
+html, body{
+    margin:0;
+    height:100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+small, p {
+  font-family: 'poppins', sans-serif
+}
+
+</style>
+<link rel="stylesheet" href="css/style.css">
+<title>DOC2DOC</title>
+</head>
+<body style="background-color:white">
+ 
+
+
+<!-- ----------------------------------- MAIN INTRO ----------------------------------- -->
+<div class="panel" style="display: block;" align="center" id ="mmu">
+    <img alt="" src="logo.png"  width="100%" height="">
+</div>
+<!-- particles.js container -->
+<div id="particles-js" style="background-color: #0fad7e">
+</div>
+<!-- ----------------------------------- -----------------------------------6 intro icons -->
+<div id = "maindiv" hidden align="center">
+	
+    <!-- ----------------------------------------------------------------------------------------------------------NAVBAR-- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top" style="    box-shadow: -2px 1px 6px 0px black;">
+        <img alt="" src="logo.png"  width="" height="60">&nbsp;&nbsp;
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link btn" id="onebtn">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" id="twobtn">Why US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" id="threebtn">How it works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn" id="fourbtn">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" id="fivebtn">Our Partners</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn" id="sixbtn">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn" id="sevenbtn">More</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+      <br><br><br><br>
+    <!-- -----------------------------------------------------------------------------------------------------------------Poster----- -->
+    <header>
+      <div align ="center" id="poster">
+        <img alt="" src="Untitled-2.png"  width="100%" height="">
+      </div>
+    </header>
+    <br><br><br><br>
+      <!-- -----------------------------------------------------------------------------------------------------------------WHY DOC2DOC----- -->
+      <diV  id="whyus">
+        <br><br><br><br><br><br><br>
+      <label><h1>Why DOC2DOC ?</h1></label><br>
+      <small>There are so many Reasons</small>
+			<div style="margin:7%">
+          <ul class="nav nav-tabs" id="myTab" role="tablist" align="center" style="color:#12482f">
+              <li class="nav-item">
+                <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">Family</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">Patient</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="three" aria-selected="false">Reallocation</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="four" aria-selected="false">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab" aria-controls="five" aria-selected="false">Sharing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="six-tab" data-toggle="tab" href="#six" role="tab" aria-controls="six" aria-selected="false">CMEs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="seven-tab" data-toggle="tab" href="#seven" role="tab" aria-controls="seven" aria-selected="false">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="eight-tab" data-toggle="tab" href="#eight" role="tab" aria-controls="eight" aria-selected="false">Updated</a>
+                </li>
+            </ul>
+  
+  
+            <div class="tab-content" id="myTabContent" align="center">
+              <br><br>
+              <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Make a huge doctor family </h3>
+                              <small>You can choose your family!</small>
+                          </div>
+                          <div class="col-lg-6">
+                              <br><br><br><br>
+                              <small>"In Doc-a-Doc you can connect with peers and colleagues 
+                                  Share your professional and personal life 
+                                  In Doc-a-Doc you can connect with peers and colleagues 
+                                  Share your professional and personal life."
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Find a specialist for your patient </h3>
+                              <small>Because every patient is important!
+                              </small>
+                          </div>
+                          <div class="col-lg-6"> 
+                              <br><br><br><br>
+                              <small>"When you think that your patient needs a specialist to treat him/her
+                                  Referring your patient to a specialist of your trust is now just a click away."                             
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Moving to another city?Hunting for a job? </h3>
+                              <small>Job notiﬁcations at your door-step</small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>"We have .......registered hospitals and provide a list of vacancies available over a range of specialities
+                                  Apply with your resume now."
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Have a diﬃcult case?</h3>
+                              <small>Seek an expert opinion?
+                              </small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>"Why post pond your consultations to another day, when the expert can guide you today
+                                  Connect with the expert in your city now to provide a quality health care."                             
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Knowledge is for everyone and it grows with sharing </h3>
+                              <small>Share your research
+                              </small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>
+                                "Feel free to share case histories/pictures with your peers. Get their views on your case."                             
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="six" role="tabpanel" aria-labelledby="six-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Attending a CME? </h3>
+                              <small>Everything right here</small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>"Last minute rush? Forgotten to register for a CME/conference?
+                                  Register through the app and get ....% oﬀ on the registration fee."
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Have a job to oﬀer?  </h3>
+                              <small>Find best people to work with
+                              </small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>
+                                  "Register in the app and post the details of the job you have got to oﬀer."                           
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="eight" role="tabpanel" aria-labelledby="eight-tab">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <img class="rounded-circle" src="knowother.png" alt="Generic placeholder image" width="150" height="150">
+                              <h3>Stay updated! </h3>
+                              <small>"Whatchout what is happenning around you."</small>
+                          </div>
+                          <div class="col-lg-6">
+                                  <br><br><br><br>
+                              <small>"Get the latest news/updates on new medicines and vaccines on the app." 
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+            </div>
+  
+          </div>
+        </diV>
+    <!-- ------------------------------------------------------------------------------------------------------------HOW IT WORKS -->
+    <div style="background-color: #dde0df;  color: #12482f; " id="hoitwo" align="center">
+      <br><br><br><br><br>
+        <h1>How it works?</h1>
+        <small>The Top Recipie</small>
+        <br><br>
+        <p style="    word-wrap: break-word; text-align: justify; margin:10%" id="p1">
+            
+                Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting. 
+
+                Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire. Stanhill on we if vicinity material in. Saw him smallest you provided ecstatic supplied. Garret wanted expect remain as mr. Covered parlors concern we express in visited to do. Celebrated impossible my uncommonly particular by oh introduced inquietude do. 
+                
+                Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed spirit an mother. Amounted old strictly but marianne admitted. People former is remove remain as. 
+        </p>
+        <br><br>
+    </div>
+    <br><br><br>
+     <!-- ------------------------------------------------------------------------------------------------------------Reviews -->
+    <div id="Reviews" align="center">
+        <br>
+        <br><br><br><br>
+        <br>
+        <h1>Reviews</h1>
+        <small>So what the best think of us</small>
+        <div class="container" style="word-wrap: break-word;">
+          <div class="row">
+            <div class="col-lg-4" id="1pic" style="margin-top:3%">
+              <img class="rounded-circle" src="coworker.png" alt="Generic placeholder image" width="100" height="100">
+              <h6>Dr. Dev Vrat Kalia</h6>
+              <small>
+                  This platform is extremely helpful. A social media platform for doctors is exactly what was needed in the medical domain. Now doctors could share their specialisations ,work ,experience and research with 
+                  everyone .This certainly has made recruiting of eligible and deserving candidates more easier .
+                  This has made my professional experience much easier and beneficial .MUST TRY . HIGHLY RECOMMENDED.
+              </small>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4" id="2pic" style="margin-top:3%">
+              <img class="rounded-circle" src="coworker.png" alt="Generic placeholder image" width="100" height="100">
+              <h6>Dr. Hardik Khurana</h6>
+              <small>It is a great platform where I can share my research and work and get to know what my fellow doctors are working on.
+                It helped me a lot to get connected with great and skillful proffessionals of healthcare Industry.
+                It is a great place where one can keep updated with latest market research and trends in the healthcare field.
+                It is very helpfull for me to keep up my knowladge upto the latest trends.
+              </small>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4" id="3pic" style="margin-top:3%">
+              <img class="rounded-circle" src="coworker.png" alt="Generic placeholder image" width="100" height="100">
+              <h6>Dr. Shekhar Singh</h6>
+              <small>I've been using this platform daily and I found it really usefull.
+                 I executes all my proffessional stuff on this platform.
+                It really helped me in my career and made my job much easier.
+              I easily found all the people I need and gets help from others in my day to day tasks of my proffessional career.
+            It is much needed platform for healthcare Industry.</small>
+              </div>
+          </div><!-- /.row -->
+        </div>
+    </div>
+    <br><br><br>
+     <!-- ------------------------------------------------------------------------------------------------------------Partners-->
+    <div id="partners" align="center" style=" background-color:#dde0df; color:black;">
+        <br><br><br><br><br><br>
+          <h1>Our Partners</h1>
+          <small>The trusted ones</small>
+          <div class="container" style="color:black; " >
+            
+              <div class="row" id="partner" style=" margin-top:5%;margin-bottom: 5%">
+                <div class="col-lg-3" id="1pic" style="margin-top:3%">
+                  <img class="" src="aiims.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>AIIMS</h6>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3" id="2pic" style="margin-top:3%">
+                  <img class="" src="fortislogo.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>FORTIS</h6>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3" id="3pic" style="margin-top:3%">
+                  <img class="" src="apollologo.png" alt="Generic placeholder image" width="150" height="150">
+                  <h6>APOLLO</h6>
+                  </div>
+                <div class="col-lg-3" id="4pic" style="margin-top:3%">
+                  <img class="" src="nimhans.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>NIMHANS</h6>
+                  </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+            <br>
+            </div>
+    </div>
+    <br><br><br><br><br>
+     <!-- ------------------------------------------------------------------------------------------------------------Team-->
+    <div id="team" >
+        <br><br><br><br><br><br>
+          <h1>Our Team</h1>
+          <small>The Perfectionists</small>
+          <div class="container" >
+              <div class="row" id="partner">
+                <div class="col-lg-3" id="1pic" style="margin-top:3%">
+                  <img class="rounded-circle" src="sachin.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>Sachin Arora</h6>
+                  <small>Founder and CEO</small>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3" id="2pic" style="margin-top:3%">
+                  <img class="rounded-circle" src="shekhar.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>Shekhar Singh</h6>
+                  <small>Chief Architect</small>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3" id="3pic" style="margin-top:3%">
+                  <img class="rounded-circle" src="hardik.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>Hardik Khurana</h6>
+                  <small>Chief Developer</small>
+                  </div>
+                <div class="col-lg-3" id="4pic" style="margin-top:3%">
+                  <img class="rounded-circle" src="dev.jpg" alt="Generic placeholder image" width="150" height="150">
+                  <h6>Dev Vrat Kalia</h6>
+                  <small>Chief UI and UX developer</small>
+                  </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+            </div>
+    </div>
+    <br>
+    <br>
+    <br><br>
+     <!-- ------------------------------------------------------------------------------------------------------------Footer -->
+<div style="background-color: #1b1d1f; padding-top:2% ; color: white" id="more">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+          <br><br>
+          <img src="logo.png" width="" height="90" alt="">
+          </div>
+          <div class="col-lg-4">
+                <br><br>
+            <h3>Contact Us:</h3>
+              <h6>Janakpuri, New Delhi (India)</h6>
+              <h6> no: 8439495912</h6>
+              <h6>Careers</h6>
+              <div >
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+              </div>
+      <div class="col-lg-4">
+            <br><br>
+          <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Username">
+                </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+              </div>
+              <div class="form-group" style="">
+                <textarea type="text" class="form-control" id="inputAddress2" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary-outline">Send</button>
+            </form>
+          </div>
+    </div>
+</div>
+<hr style="background-color: white; margin-right:10%; margin-left: 10%">
+<label style="color: white">DOC2DOC corporation copyright 2018</label>
+</div>
+</div>
+<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<!-- <script src='https://threejs.org/examples/js/libs/stats.min.js'></script> -->
+<script  src="js/index.js"></script>
+</body>
+</html>
